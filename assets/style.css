@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+* {
+  margin: 0;
+  font-family: 'Nunito', sans-serif; }
+
+main {
+  display: flex;
+  justify-content: space-around; }
+  main .text {
+    width: 40%; }
+  main .profile {
+    background: white;
+    width: 40%; }
+
+p {
+  color: #4A4A4A; }
+
+/*# sourceMappingURL=style.css.map */

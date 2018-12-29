@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  
+  .text {
+    width: 40%;
+  }
+  .profile {
+    background: white;
+    width: 40%;
+  }
+}
+p {
+  color: #4A4A4A;
+}

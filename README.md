@@ -1,0 +1,1 @@
+Run `sass --watch assets/_scss:assets` during development to build css files
