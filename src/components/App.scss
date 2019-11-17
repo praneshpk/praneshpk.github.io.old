@@ -1,0 +1,28 @@
+.App {
+  font-family: var(--default-font);
+  display: flex;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+  font-weight: var(--bold);
+  color: var(--gray);
+}
+
+p {
+  font-size: 20pt;
+  line-height: 2.5;
+  color: var(--black);
+}
+
+a {
+  font-weight: var(--bold);
+  text-decoration: none;
+  transition: 200ms opacity linear;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+

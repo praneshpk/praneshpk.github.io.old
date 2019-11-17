@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+
+@import 'global';
+@import 'scss-vars';
+
+:root {
+  --beige: #FFFBF4;
+  --black: #4A4A4A;
+  --gray: #676767;
+  --white: #fff;
+  --bold: 600;
+  --default-font: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --header-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  @for $i from 1 through length($accents) {
+    --accents-#{$i}: #{nth($accents, $i)};
+  }
+}
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  padding: 4em;
+  background: var(--beige);
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

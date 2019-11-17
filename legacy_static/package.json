@@ -1,0 +1,22 @@
+{
+  "name": "praneshpk.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/_scss -o assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praneshpk/praneshpk.github.io.old.git"
+  },
+  "author": "Pranesh Kamalakanthan <praneshpk@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/praneshpk/praneshpk.github.io.old/issues"
+  },
+  "homepage": "https://github.com/praneshpk/praneshpk.github.io.old#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

@@ -1,0 +1,21 @@
+.accent-btn {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  padding-left: 40px;
+  font-weight: var(--bold);
+  background: var(--accents-2);
+  color: var(--white);
+  font-size: 18pt;
+  bottom: 0;
+  outline: none;
+
+  &::after {
+    width:25px;
+    height:25px;
+    content: '';
+    background: center / contain no-repeat url(/assets/down.png);
+  }
+}
