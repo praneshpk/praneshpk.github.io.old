@@ -2,6 +2,16 @@
 
 .About {
 
+  a {
+    font-weight: var(--bold);
+    text-decoration: none;
+    transition: 200ms opacity linear;
+  
+    &:hover {
+      opacity: .8;
+    }
+  }
+  
   @for $i from 1 through length($accents) {
     a:nth-of-type(#{length($accents)}n+#{$i}) {
       color: var(--accents-#{$i});

@@ -21,27 +21,9 @@ html, body, #root {
   margin: 0;
   height: 100%;
 }
-
-main {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  flex-direction: column;
+a {
+  color: inherit;
 }
-
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 60%;
-  padding: 4em;
-  background: var(--beige);
-
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

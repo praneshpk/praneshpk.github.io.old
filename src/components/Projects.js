@@ -2,8 +2,10 @@ import React from 'react';
 
 export default function Projects() {
   return (
-    <div className="Projects">
-      Loading Projects...
-    </div>
+    <section id="projects">
+      <div className="Projects">
+        <p>Loading Projects...</p>
+      </div>
+    </section>
   );
 }

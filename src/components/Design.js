@@ -2,8 +2,10 @@ import React from 'react';
 
 export default function Design() {
   return (
-    <div className="Design">
-      Loading designs...
-    </div>
+    <section id="design">
+      <div className="Design">
+        <p>Loading designs...</p>
+      </div>
+    </section>
   );
 }

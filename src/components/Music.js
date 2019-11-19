@@ -2,8 +2,10 @@ import React from 'react';
 
 export default function Music() {
   return (
-    <div className="Music">
-      Loading Music...
-    </div>
+    <section id="music">
+      <div className="Music">
+        <p>Loading Music...</p>
+      </div>
+    </section>
   );
 }

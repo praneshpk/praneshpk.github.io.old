@@ -1,7 +1,8 @@
 import React from 'react';
+import Nav from './Nav';
 import './Profile.scss';
 
-export default function Profile() {
+export default function Profile({ anchors }) {
   return (
     <main>
       <div className="Profile">
@@ -25,6 +26,7 @@ export default function Profile() {
         </ul>
         <button className="accent-btn">Scroll down to see my projects!</button>
       </div>
+      {anchors && <Nav anchors={anchors} />}
     </main>
   );
 }
