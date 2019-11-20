@@ -23,12 +23,12 @@ nav {
       margin-top: -46px;
       padding: 20px 0;
     }
-    
+
     span {
       position: absolute;
       font-size: 20px;
-      margin-top: 3rem;
-      right: 2em;
+      margin-top: 4rem;
+      left: 1.5rem;
       color: var(--gray);
       display: block;
       visibility: hidden;
@@ -46,5 +46,17 @@ nav {
       opacity: 1;
     }
 
+  }
+
+  button {
+    position: absolute;
+    top:0; bottom:0;
+    margin: auto;
+    font-size: 0;
+    border: 0;
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    background: green;
   }
 }

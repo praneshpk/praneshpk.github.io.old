@@ -15,11 +15,13 @@ export default function App() {
     <HashRouter>
       <div className="App">
         <Profile anchors={anchors} />
-        <About />
-        <Games />
-        <Design />
-        <Music />
-        <Projects />
+        <div className="panels">
+          <About />
+          <Games />
+          <Design />
+          <Music />
+          <Projects />
+        </div>
       </div>
     </HashRouter>
   );

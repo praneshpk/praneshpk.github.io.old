@@ -41,8 +41,13 @@ export default function Nav({ anchors }) {
     window.scrollTo(0, index * window.innerHeight);
   });
 
+  function toggleProfile() {
+    const profile = document.querySelector('main');
+    profile.classList.toggle('hide');
+  }
   return (
     <nav>
+      <button onClick={toggleProfile}>&lt;&gt;</button>
       {anchors.map((val) => (
         <li key={val} data-key={val}>
           <span>{val}</span>

@@ -1,30 +1,44 @@
 .App {
   font-family: var(--default-font);
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  // align-items: flex-end;
 }
 
 main {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 40%;
+  height: 100vh;
+  padding: 0 2px;
+  min-width: 30%;
+  top: 0;
   left: 0;
   flex-direction: column;
+  transition: all 200ms linear;
+
+  &.hide {
+    min-width: 0;
+    width: 0;
+    div {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.panels {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--beige);
 }
 
 section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 60%;
-  background: var(--beige);
 
+  min-height: 100vh;
   div {
     padding: 0 6em;
   }
