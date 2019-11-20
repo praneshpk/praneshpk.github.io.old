@@ -6,7 +6,9 @@ export default function Profile({ anchors }) {
   return (
     <main>
       <div className="Profile">
-        <figure style={{ backgroundImage: 'url(./assets/me.jpg)' }} />
+        <a href="#about">
+          <figure style={{ backgroundImage: 'url(./assets/me.jpg)' }} />
+        </a>
         <ul className="links">
           <li>
             <a href="https://github.com/praneshpk">
@@ -24,7 +26,7 @@ export default function Profile({ anchors }) {
             </a>
           </li>
         </ul>
-        <button className="accent-btn">Scroll down to see my projects!</button>
+        {/* <button className="accent-btn">Scroll down to see my projects!</button> */}
       </div>
       {anchors && <Nav anchors={anchors} />}
     </main>

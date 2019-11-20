@@ -16,7 +16,9 @@
     --accents-#{$i}: #{nth($accents, $i)};
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 html, body, #root {
   margin: 0;
   height: 100%;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Games from './Games';
 import Design from './Design';
 import Music from './Music';
@@ -20,11 +20,6 @@ export default function App() {
         <Design />
         <Music />
         <Projects />
-        {/* <Route path="/" component={About} />
-        <Route path="/games" component={Games} />
-        <Route path="/design" component={Design} />
-        <Route path="/music" component={Music} />
-        <Route path="/learn" component={Projects} /> */}
       </div>
     </HashRouter>
   );
