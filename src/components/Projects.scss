@@ -1,0 +1,11 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  figure {
+    margin: 1em 0;
+    padding: 20px;
+    width: 25%;
+    background: white;
+  }
+}

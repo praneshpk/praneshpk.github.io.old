@@ -10,17 +10,15 @@ import Profile from './Profile';
 import './App.scss';
 
 export default function App() {
-  const anchors = ['About', 'Games', 'Design', 'Music', 'Projects'];
+  const anchors = {
+    About, Projects, Games, Design, Music,
+  };
   return (
     <HashRouter>
       <div className="App">
-        <Profile anchors={anchors} />
+        <Profile anchors={Object.keys(anchors)} />
         <div className="panels">
-          <About />
-          <Games />
-          <Design />
-          <Music />
-          <Projects />
+          {Object.values(anchors).map((e) => React.createElement(e, {}))}
         </div>
       </div>
     </HashRouter>
