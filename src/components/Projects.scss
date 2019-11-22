@@ -1,11 +1,11 @@
 .Projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   figure {
-    margin: 1em 0;
+    margin: 1em;
     padding: 20px;
-    width: 25%;
+    word-wrap: break-word;
     background: white;
   }
 }

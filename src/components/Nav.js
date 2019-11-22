@@ -38,7 +38,6 @@ export default function Nav({ anchors }) {
 
     const nav = document.querySelector('nav');
     const index = [...nav.children].findIndex((e) => e.className === 'active') - 1;
-    console.log(index);
     window.scrollTo(0, index * window.innerHeight);
   });
 

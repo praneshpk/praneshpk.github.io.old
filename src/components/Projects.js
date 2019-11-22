@@ -12,7 +12,11 @@ export default function Projects() {
         });
         const res = await response.json();
         if (Array.isArray(res)) {
-          setRepos(res.map((e) => <figure>{e.name}</figure>));
+          setRepos(res.map((e) => (
+            <figure key={e.id}>
+              <a href={e.html_url}>{e.name}</a>
+            </figure>
+          )));
         } else {
           setRepos('Error loading repos');
         }
