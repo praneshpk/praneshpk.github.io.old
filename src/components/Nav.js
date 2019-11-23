@@ -29,10 +29,11 @@ export default function Nav({ anchors }) {
     updateAnchor(anchors[index]);
   }, { capture: false, passive: true });
 
-  window.addEventListener('hashchange', (evt) => updateAnchor(evt.currentTarget.location.hash.substr(2)));
 
   // Scroll to correct section on pageload
   useEffect(() => {
+    window.addEventListener('hashchange', (evt) => updateAnchor(evt.currentTarget.location.hash.substr(2)));
+
     const hash = window.location.hash.substr(2);
     updateAnchor(hash);
 
