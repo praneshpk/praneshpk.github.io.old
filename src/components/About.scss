@@ -1,20 +1,25 @@
-@import '../scss-vars';
 
 .About {
-
+  border: 6px double var(--ansi-silver);
+  background: var(--ansi-navy);
   a {
-    font-weight: var(--bold);
     text-decoration: none;
-    transition: 200ms opacity linear;
+    // transition: 200ms opacity linear;
   
     &:hover {
-      opacity: .8;
+      background-color: var(--ansi-silver);
     }
   }
+  .blinker {
+    animation: 1s blink step-end infinite;
+  }
   
-  @for $i from 1 through length($accents) {
-    a:nth-of-type(#{length($accents)}n+#{$i}) {
-      color: var(--accents-#{$i});
-    }
+}
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: var(--ansi-white);
   }
 }

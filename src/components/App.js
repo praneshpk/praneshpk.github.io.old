@@ -5,20 +5,20 @@ import Design from './Design';
 import Music from './Music';
 import Projects from './Projects';
 import About from './About';
-import Profile from './Profile';
+import Nav from './Nav';
 
 import './App.scss';
 
 export default function App() {
-  const anchors = {
+  const anchors = [
     About, Projects, Games, Design, Music,
-  };
+  ];
   return (
     <HashRouter>
       <div className="App">
-        <Profile anchors={Object.keys(anchors)} />
+        <Nav links={anchors.map((e) => e.name)} />
         <div className="panels">
-          {Object.values(anchors).map((e) => React.createElement(e, {}))}
+          {anchors.map((e) => React.createElement(e, { key: e.toString() }))}
         </div>
       </div>
     </HashRouter>

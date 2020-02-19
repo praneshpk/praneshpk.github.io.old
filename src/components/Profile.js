@@ -2,13 +2,13 @@ import React from 'react';
 import Nav from './Nav';
 import './Profile.scss';
 
-export default function Profile({ anchors }) {
+export default function Profile({ anchors = [] }) {
   return (
     <main>
       <div className="Profile">
-        <a href="#about">
+        {/* <a href="#about">
           <figure style={{ backgroundImage: 'url(./assets/me.jpg)' }} />
-        </a>
+        </a> */}
         <ul className="links">
           <li>
             <a href="https://github.com/praneshpk">

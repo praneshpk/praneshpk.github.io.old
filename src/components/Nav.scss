@@ -1,63 +1,72 @@
 nav {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  margin-top: 3%;
-  right: 0;
+  position: fixed;
+  width: 100%;
+  background: var(--ansi-gray);
 
-  li {
-    color: var(--gray);
-    list-style-type: none;
-    border-right: 4px solid var(--gray);
-    height: 100%;
-
-    a {
-      text-decoration: none;
-      font-size: 36px;
-      display: block;
-      height: 100%;
-      user-select: none;
-      margin-right: -30px;
-      margin-top: -46px;
-      padding: 20px 0;
-    }
-
-    span {
-      position: absolute;
-      font-size: 20px;
-      margin-top: 4rem;
-      left: 1.5rem;
-      color: var(--gray);
-      display: block;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 200ms linear;
-    }
-
-    &.active, &.active + li a, &:hover, &:hover + li a{
-      color: var(--accents-2);
-      border-right-color: var(--accents-2);
-    }
-
-    &:hover span {
-      visibility: visible;
-      opacity: 1;
-    }
-
-  }
-
-  button {
-    position: absolute;
-    top:0; bottom:0;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin: auto;
-    font-size: 0;
-    border: 0;
-    height: 20px;
-    width: 20px;
-    padding: 20px;
-    background: var(--accents-1);
-    outline: none;
+    padding: 0;
+    width: 80%;
+
+    li {
+      color: var(--ansi-black);
+      list-style-type: none;
+      height: 100%;
+      font-size: 24px;
+      &::first-letter {
+        color: var(--ansi-maroon);
+      }
+      a {
+        text-decoration: none;
+        // display: block;
+        // height: 100%;
+        // user-select: none;
+        // margin-right: -30px;
+        // margin-top: -46px;
+        // padding: 20px 0;
+        &:hover {
+          background: var(--ansi-silver);
+        }
+      }
+
+      span {
+        position: absolute;
+        font-size: 20px;
+        margin-top: 4rem;
+        left: 1.5rem;
+        color: var(--gray);
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 200ms linear;
+      }
+
+      &.active, &.active + li a, &:hover, &:hover + li a{
+        color: var(--accents-2);
+        border-right-color: var(--accents-2);
+      }
+
+      &:hover span {
+        visibility: visible;
+        opacity: 1;
+      }
+
+    }
+
+    button {
+      position: absolute;
+      top:0; bottom:0;
+      margin: auto;
+      font-size: 0;
+      border: 0;
+      height: 20px;
+      width: 20px;
+      padding: 20px;
+      background: var(--accents-1);
+      outline: none;
+    }
   }
 }
