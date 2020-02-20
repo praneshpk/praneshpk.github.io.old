@@ -16,57 +16,20 @@ nav {
       list-style-type: none;
       height: 100%;
       font-size: 24px;
+      &.active {
+        background-color: var(--ansi-silver);
+      }
       &::first-letter {
         color: var(--ansi-maroon);
       }
       a {
         text-decoration: none;
-        // display: block;
-        // height: 100%;
-        // user-select: none;
-        // margin-right: -30px;
-        // margin-top: -46px;
-        // padding: 20px 0;
+
         &:hover {
           background: var(--ansi-silver);
         }
       }
 
-      span {
-        position: absolute;
-        font-size: 20px;
-        margin-top: 4rem;
-        left: 1.5rem;
-        color: var(--gray);
-        display: block;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 200ms linear;
-      }
-
-      &.active, &.active + li a, &:hover, &:hover + li a{
-        color: var(--accents-2);
-        border-right-color: var(--accents-2);
-      }
-
-      &:hover span {
-        visibility: visible;
-        opacity: 1;
-      }
-
-    }
-
-    button {
-      position: absolute;
-      top:0; bottom:0;
-      margin: auto;
-      font-size: 0;
-      border: 0;
-      height: 20px;
-      width: 20px;
-      padding: 20px;
-      background: var(--accents-1);
-      outline: none;
     }
   }
 }

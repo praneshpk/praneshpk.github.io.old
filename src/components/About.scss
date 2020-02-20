@@ -4,11 +4,6 @@
   background: var(--ansi-navy);
   a {
     text-decoration: none;
-    // transition: 200ms opacity linear;
-  
-    &:hover {
-      background-color: var(--ansi-silver);
-    }
   }
   .blinker {
     animation: 1s blink step-end infinite;

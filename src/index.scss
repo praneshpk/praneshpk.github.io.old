@@ -9,7 +9,7 @@
   --gray: #676767;
   --white: #fff;
   --bold: 600;
-  --default-font: DOS, "Courier New", Courier, monospace;
+  --default-font: DOS, Courier, monospace;
   --header-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   
   // ANSI COLORS
@@ -43,6 +43,9 @@ html, body, #root {
 }
 a {
   color: inherit;
+  &:hover {
+    background-color: var(--ansi-silver);
+  }
 }
 
 .center {
